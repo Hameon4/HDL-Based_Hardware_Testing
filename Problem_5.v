@@ -37,12 +37,7 @@ module question5f(Y, A, B, C, D);
 endmodule
 
 
-
-
-
-
-// Code your testbench here
-// or browse Examples
+//TestBench
 module tb;
   reg A, B, C, D;
   wire Y, Yf, allout, alloutf;
@@ -55,9 +50,7 @@ module tb;
   //create a random stimul and compare UUT outputs
   initial begin
 
-
-
-      //compare outputs of good and faulty UUTs
+        //compare outputs of good and faulty UUTs
         #5 if (allout != alloutf) $display ("SA 0 fault at w4 detected with test-vector: %5b" , A, B, C, D);
 
           end
